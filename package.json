@@ -1,10 +1,19 @@
 {
-  "name": "grid-table",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@dmunoz/gridtable",
+  "version": "0.1.5",
+  "main": "./dist/gridtable.common.js",
+  "private": false,
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name gridtable ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
